@@ -1,0 +1,6 @@
+{
+  "name": "SPECTRE E-HYPERCAR",
+  "description": "Award-winning dark hypersonic spatial experience & VIP lead generation showcase for SPECTRE ultra-luxury electric hypercar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
