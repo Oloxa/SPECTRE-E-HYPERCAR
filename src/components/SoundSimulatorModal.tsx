@@ -24,6 +24,9 @@ export const SoundSimulatorModal: React.FC<SoundSimulatorModalProps> = ({
       setRpm(1000);
       setLaunchComplete(false);
     }
+    return () => {
+      soundEngine.stop();
+    };
   }, [isOpen]);
 
   if (!isOpen) return null;

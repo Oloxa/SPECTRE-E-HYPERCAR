@@ -39,9 +39,9 @@ export const Header: React.FC<HeaderProps> = ({
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between glass-card rounded-full px-6 py-3 transition-all duration-500 border border-purple-500/20 shadow-2xl backdrop-blur-xl">
         {/* Brand Logo / Wordmark */}
-        <a
-          href="#"
-          className="flex items-center gap-3 group focus:outline-none"
+        <button
+          onClick={() => scrollToSection('hero')}
+          className="flex items-center gap-3 group focus:outline-none cursor-pointer text-left"
         >
           <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-purple-600 to-cyan-400 p-[1px] flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-all">
             <div className="w-full h-full bg-[#020204] rounded-full flex items-center justify-center">
@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
               E-HYPERCAR
             </span>
           </div>
-        </a>
+        </button>
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-jakarta tracking-wide text-slate-300">
